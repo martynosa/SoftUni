@@ -1,0 +1,138 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  width: 1400px;
+  border-radius: 24px;
+  background-color: #f6f7f8;
+  border: 1px solid #000;
+  box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input,
+select,
+option {
+  padding: 4px 8px;
+}
+
+.img-container {
+  width: 50%;
+  background-image: url(/image/calculator.png);
+  background-size: cover;
+}
+
+.calc-container {
+  width: 50%;
+  padding: 32px 64px;
+}
+
+.calc-container h1 {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 64px;
+  font-size: 32px;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 36px;
+}
+
+.btn-group button {
+  padding: 12px 36px;
+  border-radius: 12px;
+  border: 1px solid black;
+  font-size: 24px;
+}
+
+.active {
+  background-color: #7cd66a;
+}
+
+.gender-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.gender-group h2 {
+  width: 100%;
+  text-align: center;
+}
+
+.gender-group select {
+  width: 240px;
+}
+
+.gender-group input {
+  width: 240px;
+}
+
+.weight-group {
+  margin-bottom: 32px;
+}
+
+.weight-group h2 {
+  text-align: center;
+  margin-bottom: 24px;
+}
+.weight-group input {
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.height-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: space-around;
+  margin-bottom: 64px;
+}
+
+.height-group h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.height-group input {
+  width: 45%;
+}
+
+.btn-calculate {
+  width: 100%;
+  background-color: #00a5d0;
+  border-radius: 12px;
+  padding: 4px 0;
+  border: none;
+  color: white;
+  font-size: 36px;
+  box-shadow: 1px 3px 10px 0px rgba(0, 0, 0, 0.75);
+  margin-bottom: 64px;
+}

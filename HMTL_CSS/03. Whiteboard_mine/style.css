@@ -1,0 +1,243 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+  --text-clr: #f0f0f0;
+  --primary-clr: #3ed7a5;
+  --section-grn-clr: #a8f1dd;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  padding: 0 64px;
+}
+
+/* main {
+  max-width: 1640px;
+  margin: 0 auto;
+  padding: 0 32px;
+} */
+
+.hero {
+  margin: 0 auto;
+  /* background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 30%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url('./image/computer-main.jpg'); */
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7399334733893557) 30%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px;
+  margin-bottom: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-clr);
+  text-shadow: 1px 1px 1px #000;
+}
+
+.hero .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: var(--text-clr);
+}
+
+.main-header {
+  font-size: 72px;
+  color: inherit;
+  text-shadow: 1px 3px 3px #000;
+  margin-bottom: 72px;
+}
+
+.secondary-header {
+  font-size: 28px;
+  font-weight: 400;
+  width: 52%;
+  margin: 0 auto;
+  color: inherit;
+  text-shadow: 1px 3px 3px #000;
+  margin-bottom: 72px;
+}
+
+.hero .content .hero-btn {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 8px 28px;
+  border-radius: 6px;
+  color: inherit;
+  background-color: #11ca92;
+  border: 3px solid #11ca92;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 72px;
+  cursor: pointer;
+}
+
+.hero .content .hero-btn:hover {
+  background-color: transparent;
+  border: 3px solid var(--text-clr);
+}
+
+.hero .content a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: inherit;
+  gap: 12px;
+  text-shadow: 1px 3px 3px #000;
+  text-decoration: none;
+}
+
+/* .hero-img-container {
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+} */
+
+.hero-img {
+  position: absolute;
+  top: -200px;
+  /* top: 0; */
+  left: 0;
+  z-index: -1;
+}
+
+/* WHAT */
+
+.what {
+  display: flex;
+}
+
+.what .img-container {
+  width: 50%;
+}
+
+.what .features {
+  -width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 72px;
+}
+
+.what .features .content h3 {
+  font-size: 36px;
+}
+
+.what .features .content p {
+  font-size: 32px;
+  margin-bottom: 42px;
+}
+
+.what .list {
+  list-style: none;
+  font-size: 28px;
+}
+
+.what .list li {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.what .list li i {
+  color: var(--primary-clr);
+}
+
+.what .list li:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.perfect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.perfect img {
+  width: 50%;
+}
+
+.perfect .content {
+  width: 50%;
+}
+
+.perfect .content h3 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+
+.perfect .content .features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+}
+
+.perfect .content .features div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-clr);
+}
+
+.faq {
+  background-color: var(--section-grn-clr);
+  padding: 24px 36px;
+}
+
+.faq h3 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 48px;
+}
+
+.faq .content {
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 52px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.faq .email {
+  text-align: center;
+}
+
+.faq span {
+  font-weight: 700;
+}
